@@ -41,6 +41,20 @@ In addition there will also be a an console (like Try Ruby!) and an HTTP
 inspector (so you can easily see how the requests/responses look like).
 
 
+Why a JRuby applet?
+-------------------
+
+Let me guess: Your first thought was something like "WTF? Java applet?" Nobody
+likes Java applets, but I still believe it's the best option for this project.
+Applets have been improved in the last years, and you will infact never even see
+the applet in Try Camping!
+
+There is only one other option: running the code on the backend server in a
+limited process. I don't like this because (1) it means I'll have to maintain a
+server which is going to run untrusted code and (2) the applet solution only
+requires static files which can be hosted on any server and scales easily.
+
+
 Why Camping?
 ------------
 
