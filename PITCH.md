@@ -55,6 +55,14 @@ server which is going to run untrusted code and (2) the applet solution only
 requires static files which can be hosted on any server and scales easily.
 
 
+What's Camping?
+---------------
+
+Camping is a microframework written by why the lucky stiff (also called _why)
+which constantly tries to stay below 4k of code. Read more about at
+<http://whywentcamping.com/>
+
+
 Why Camping?
 ------------
 
