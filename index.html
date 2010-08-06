@@ -1,0 +1,102 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Try Camping!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/deployJava.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/json.js"></script>
+  <script src="js/writeCapture.js"></script>
+  <script src="js/jquery.writeCapture.js"></script>
+  <script src="js/jquery.console.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/books.js"></script>
+  <script src="js/layout.js"></script>
+</head>
+<body>
+  <div id="header">
+    <h1><a href="#">Try Camping!</a></h1>
+    
+    <ul id="nav">
+      <li><a href="#">New</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#"><strong>Log in</strong></a></li>
+    </ul>
+    
+    <div style="clear:both"></div>
+    <div id="applet-container"></div>
+  </div>
+  
+  <div class="notice" id="thing" style="display:none">Booting the environment...</div>
+  
+  <div id="workarea">
+    <div id="code">
+      <div id="editor">
+        <p class="infobar">Not started...</p>
+        <textarea>Camping.goes :HelloWorld
+module HelloWorld::Controllers
+  class Index
+    def get
+      "Hello World!"
+    end
+  end
+end</textarea>
+      </div>
+      
+      <div class="gutter x"></div>
+      
+      <div id="extra">
+        <div class="infobar">
+          <ul id="extranav">
+            <li class="active"><a href="#browser">Browser</a></li>
+            <li><a href="#irb">IRB</a></li>
+            <li><a href="#console">Console</a></li>
+            <li><a href="#http-inspector">HTTP inspector</a></li>
+          </ul>
+        </div>
+        
+        <div id="applet-loader" class="overlay">
+          <div class="center">
+            <input id="applet-button" type="submit" value="Load Try Camping!">
+            <p><strong>NOTE:</strong> If you don't have Java installed, we will redirect you to the installation instructions. Please return here when it's installed.</p>
+          </div>
+        </div>
+        
+        <div id="browser" class="tab">
+          <div id="browser_nav">
+            <div id="browser_base">http://localhost:3301/</div>
+            <form action="#" id="browser_form">
+              <input type="text" value="" id="browser_input" autocomplete="off">
+              <input type="submit" value="Go!" id="browser_go">
+              <input type="submit" value="Open in browser" id="browser_open">
+            </form>
+          </div>
+          
+          <div id="browser_content">
+            <p><strong>NOTE: </strong>The browser is not yet implemented, please visit the page in the browser instead.</p>
+          </div>
+        </div>
+        
+        <div id="irb" class="tab"></div>
+        <div id="console" class="tab"><pre></pre></div>
+      </div>
+    </div>
+    <div class="gutter y"></div>
+    <div id="tutorial">
+      <div id="tutorial_content">
+        <h2>Loading...</h2>
+      </div>
+      
+      <div class="gutter x"></div>
+        
+      <div id="progress">
+        <div class="text">
+          <h2>Progress</h2>
+          <p class="loading">Loading...</p>
+          <ol id="progress_list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

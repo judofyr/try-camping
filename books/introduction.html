@@ -1,0 +1,41 @@
+<h1>Getting started with Camping</h1>
+
+<div class="chapter">
+  <div class="page">
+    <h2>Got 15 minutes? Give Camping a shot right now!</h2>
+    <p>Blah, blah, blah</p>
+  </div>
+  
+  <div class="task">
+    <h2>Load the Camping environment</h2>
+    
+    <textarea class="tc/js">
+      function onload(task) {
+        App.bind('load',   function() { task(App.PENDING) });
+        App.bind('loaded', function() { task(App.PASSED)  });
+        App.bind('failed', function() { task(App.FAILED)  });
+      }
+    </textarea>
+  </div>
+</div>
+
+<div class="chapter">
+  <div class="page">
+    <h2>Your first app!</h2>
+    
+    <p>Congratulations, you've just started on your first web application and if you take a look at the <em>bottom left corner</em> you can see it running right now! By pressing the <a href="#browser_open" class="js-location-hint">"Open in browser"</a> button you can also view your app in a separate window.</p>
+
+    <p>Well, since you haven't actually <em>written</em> anything, the app doesn't do anything either, so let's get started:</p>
+    
+    <pre><code class="ruby">module HelloWorld::Controllers
+  class Index
+    def get
+      "Hello World!"
+    end
+  end
+end</code></pre>
+  </div>
+  <div class="task">
+    <h2>Do shit!</h2>
+  </div>
+</div>
